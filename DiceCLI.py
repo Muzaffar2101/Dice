@@ -10,7 +10,7 @@ while True:
         if command.startswith("CREATE_DICE"):
             print(Interpreter.parse_create_dice(command))
         elif command.startswith("WITH"):
-            Interpreter.parse_with_command(command)
+            print(Interpreter.parse_with_command(command))
         elif command.startswith("PRINT_DICE"):
             print(Interpreter.parse_print_dice(command))
         elif command.startswith("DELETE_DICE"):
