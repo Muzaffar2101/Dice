@@ -5,6 +5,7 @@ import Interpreter
 def handle_command():
     cmd = entry.get().strip()
     entry.delete(0, tk.END)
+    output(cmd)
     if cmd.upper() == "EXIT":
         root.destroy()
         return
